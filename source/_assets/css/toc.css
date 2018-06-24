@@ -1,0 +1,44 @@
+#toc { 
+    width:40px; 
+    height:20px;
+    position:fixed;
+    float:left;
+    overflow-y:hidden;
+    background-color:lightblue;
+}
+#toc a{
+    display:none;
+}
+#toc:hover{
+    width:200px;
+    height: 90vh;
+    overflow-y:scroll;    
+}
+#toc:hover a { 
+    display:block; 
+    color:#0094FF;
+}
+
+#toc a.toc-h1{
+    font-size:2em;    
+    color:blue;
+    border-bottom:solid 1px blue;
+}
+#toc a.toc-h2{
+    color:grey;
+    font-size:1.5em;
+    margin-left:15px;
+    border-bottom:dashed 1px grey;
+}
+#toc a.toc-h3{
+    color:black;
+    font-style:italic;
+    font-size:1.17em;
+    margin-left:30px;    
+}
+#toc a:nth-child(odd){
+    background-color:lightblue;
+}
+#toc a:nth-child(even){
+    background-color:lightgrey;
+}
